@@ -19,6 +19,8 @@ public class Aluno {
 	private String nomeEscola;
 	private String serieMatruculado;
 	
+	
+	/*lista de Disciplinas*/
 	private List<Discplina> disciplinas = new ArrayList<Discplina>();
 	
 
@@ -116,7 +118,7 @@ public class Aluno {
 		
 	}
 	
-	/*Metod que retorna  amedia do aluno*/
+	/*Metodo que retorna  amedia do aluno*/
 	public double getMediaNota() {
 		double somaTotal = 0.0;
 		for (Discplina discplina : disciplinas) {
@@ -124,7 +126,7 @@ public class Aluno {
 		}
 		return somaTotal / disciplinas.size();
 	}
-	
+	// metodo simples para saber se o Aluno esta Aprovado ou não com boolean
 	public boolean getAlunoAprovado() {
 		double media = this.getMediaNota();
 		
@@ -136,7 +138,7 @@ public class Aluno {
 	
 		
 	}
-	
+	// metodo para saber se o Aluno esta Aprovado ou não
 	public String  getAlunoAprovado2() {
 		double media = this.getMediaNota();
 		
