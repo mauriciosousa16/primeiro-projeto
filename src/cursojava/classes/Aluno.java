@@ -130,6 +130,12 @@ public class Aluno  extends Pessoa{
 		// TODO Auto-generated method stub
 		return super.msgMairoIdade();
 	}
+
+	@Override
+	public double Salario() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 			
 		
 	

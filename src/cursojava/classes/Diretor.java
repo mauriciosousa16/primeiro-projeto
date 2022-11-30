@@ -85,4 +85,10 @@ public class Diretor extends Pessoa {
 		return super.msgMairoIdade();
 	}
 
+	@Override
+	public double Salario() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

@@ -2,9 +2,8 @@ package cursojava.classes;
 
 import java.util.Objects;
 
-public class Pessoa {
-	
-	
+public abstract class Pessoa {
+
 	protected String nome;
 	protected int idade;
 	protected String dataNascimento;
@@ -12,7 +11,7 @@ public class Pessoa {
 	protected String numeroCpf;
 	protected String nomeMae;
 	protected String nomePai;
-	
+
 	public Pessoa() {
 		// TODO Auto-generated constructor stub
 	}
@@ -98,15 +97,17 @@ public class Pessoa {
 				&& Objects.equals(nomePai, other.nomePai) && Objects.equals(numeroCpf, other.numeroCpf)
 				&& Objects.equals(registroGeral, other.registroGeral);
 	}
-	
+
 	public boolean PessoaMairoIdade() {
 		return idade >= 18;
 	}
-	
+
 	public String msgMairoIdade() {
 		return this.PessoaMairoIdade() ? "maior de idade !" : "menor de Idade!";
 	}
 	
-	
+	// metodo abstrato e obrigatorio dentro das classes filhas 
+
+	public abstract double Salario();
 
 }
